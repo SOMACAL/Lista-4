@@ -1,12 +1,12 @@
 package br.edu.up.model;
 
 public class Ponto {
-  double x;
-  double y;
+  private double x;
+  private double y;
 
-  Ponto() {}
+  public Ponto() {}
 
-  Ponto(double x, double y) {
+  public Ponto(double x, double y) {
     this.x = x;
     this.y = y;
   }
