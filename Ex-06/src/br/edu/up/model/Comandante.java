@@ -1,14 +1,16 @@
 package br.edu.up.model;
-
 import java.util.ArrayList;
 
 public class Comandante extends Pessoa {
   private double totalHoraVoo;
   private ArrayList<String> idiomas = new ArrayList<>();
 
-  public void Super(String nome, String rg,  double totalHoraVoo) {
-    this.setNome(nome);
-    this.setRg(rg);
+  public Comandante() {
+
+  }
+
+  public Comandante(String nome, String rg,  double totalHoraVoo) {
+    super(nome, rg);
     this.totalHoraVoo = totalHoraVoo;
   }
 

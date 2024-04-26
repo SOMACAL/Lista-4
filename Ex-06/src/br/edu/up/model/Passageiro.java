@@ -4,9 +4,13 @@ public class Passageiro extends Pessoa {
   private String idBagagem;
   private Passagem passagem;
 
-  public void Super(String nome, String rg, String idBagagem, Passagem passagem) {
-    this.setNome(nome);
-    this.setRg(rg);
+
+  public Passageiro() {
+
+  }
+
+  public Passageiro(String nome, String rg, String idBagagem, Passagem passagem) {
+    super(nome, rg);
     this.idBagagem = idBagagem;
     this.passagem = passagem;
   }
@@ -25,9 +29,5 @@ public class Passageiro extends Pessoa {
 
   public void setPassagem(Passagem passagem) {
     this.passagem = passagem;
-  }
-
-  public Passageiro() {
-
   }
 }

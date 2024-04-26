@@ -4,9 +4,12 @@ public class Tripulacao extends Pessoa {
   private String idAeronautica;
   private String matricula;
 
-  public void Super(String nome, String rg, String idAeronautica, String matricula) {
-    this.setNome(nome);
-    this.setRg(rg);
+  public Tripulacao() {
+    
+  }
+
+  public Tripulacao(String nome, String rg, String idAeronautica, String matricula) {
+    super(nome, rg);
     this.idAeronautica = idAeronautica;
     this.matricula = matricula;
   }
