@@ -1,41 +1,40 @@
 package br.edu.up.model;
 
-
 public class Compromisso {
-  private String Pessoa;
-  private String Local;
-  private String Assunto ;
-  private int Hora;
+    private String pessoa;
+    private String local;
+    private String assunto;
+    private int hora;
 
-  public String getPessoa() {
-    return this.Pessoa;
-}
+    public String getPessoa() {
+        return pessoa;
+    }
 
-public String getLocal() {
-    return this.Local;
-}
+    public void setPessoa(String pessoa) {
+        this.pessoa = pessoa;
+    }
 
-public String getAssunto() {
-    return this.Assunto;
-}
+    public String getLocal() {
+        return local;
+    }
 
-public int getHora() {
-    return this.Hora;
-}
+    public void setLocal(String local) {
+        this.local = local;
+    }
 
-public void setPessoa(String Pessoa) {
-    this.Pessoa = Pessoa;
-}
+    public String getAssunto() {
+        return assunto;
+    }
 
-public void setLocal(String Local) {
-    this.Local = Local;
-}
-public void setAssunto(String Assunto) {
-  this.Assunto = Assunto;
-}
+    public void setAssunto(String assunto) {
+        this.assunto = assunto;
+    }
 
-public void setHora(int Hora) {
-  this.Hora = Hora;
-}
+    public int getHora() {
+        return hora;
+    }
 
+    public void setHora(int hora) {
+        this.hora = hora;
+    }
 }
