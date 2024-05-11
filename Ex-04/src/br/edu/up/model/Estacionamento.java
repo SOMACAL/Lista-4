@@ -1,4 +1,6 @@
 package br.edu.up.model;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -8,15 +10,16 @@ public class Estacionamento {
   private ArrayList<Veiculo> relatorio = new ArrayList<>();
 
   public Estacionamento() {
-    ArrayList<Veiculo> vagas = new ArrayList<>(10);
+
   }
 
   public Estacionamento(ArrayList<Veiculo> relatorio) {
     this.relatorio = relatorio;
   }
 
-  public Date getData() {
-    return data;
+  public String getData() {
+    SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
+    return formatoData.format(data);
   }
 
   public ArrayList<Veiculo> getVagas() {
