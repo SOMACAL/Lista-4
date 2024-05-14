@@ -1,4 +1,4 @@
-package br.edu.up.model;
+package br.edu.up.model.modelos;
 
 public abstract class Contato {
   private int codigo;
