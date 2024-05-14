@@ -1,4 +1,4 @@
-package br.edu.up.model;
+package br.edu.up.model.Modelos;
 
 public class Passageiro extends Pessoa {
   private String idBagagem;

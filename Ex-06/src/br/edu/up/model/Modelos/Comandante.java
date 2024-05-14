@@ -1,4 +1,4 @@
-package br.edu.up.model;
+package br.edu.up.model.Modelos;
 import java.util.ArrayList;
 
 public class Comandante extends Pessoa {

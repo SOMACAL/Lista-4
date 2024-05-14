@@ -1,19 +1,27 @@
-package br.edu.up.model;
-import java.util.Date;
+package br.edu.up.model.Modelos;
 
 public class Passagem {
+  private int id;
   private String classe;
   private String numAcento;
-  private Date dataVoo;
+  private DataVoo dataVoo;
 
   public Passagem() {
-    
+
   }
-  
-  public Passagem(String classe, String numAcento, Date dataVoo) {
+
+  public Passagem(String classe, String numAcento, DataVoo dataVoo) {
     this.classe = classe;
     this.numAcento = numAcento;
     this.dataVoo = dataVoo;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
   }
 
   public String getClasse() {
@@ -32,11 +40,11 @@ public class Passagem {
     this.numAcento = numAcento;
   }
 
-  public Date getDataVoo() {
+  public DataVoo getDataVoo() {
     return dataVoo;
   }
 
-  public void setDataVoo(Date dataVoo) {
+  public void setDataVoo(DataVoo dataVoo) {
     this.dataVoo = dataVoo;
   }
 }

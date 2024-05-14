@@ -1,4 +1,4 @@
-package br.edu.up.model;
+package br.edu.up.model.Modelos;
 
 public abstract class Pessoa {
   private String nome;
