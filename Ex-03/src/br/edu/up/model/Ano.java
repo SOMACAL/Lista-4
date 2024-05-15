@@ -1,33 +1,21 @@
 package br.edu.up.model;
-import br.edu.up.model.Mes;
-
 public class Ano {
-  private int Ano;
-  private boolean Bissexto;
-  private Mes[] Meses;
+    private int ano;
+    private boolean bissexto;
 
-  public int getAno() {
-    return this.Ano;
-}
+    public int getAno() {
+        return ano;
+    }
 
-public boolean getBissexto() {
-    return this.Bissexto;
-}
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
 
-public Mes[] getMeses() {
-    return this.Meses;
-}
+    public boolean isBissexto() {
+        return bissexto;
+    }
 
-public void setAno(int Ano) {
-    this.Ano = Ano;
-}
-
-public void setBissexto(boolean Bissexto) {
-    this.Bissexto = Bissexto;
-}
-public void setMeses(Mes[] Meses) {
-  this.Meses = Meses;
-}
-
-
+    public void setBissexto(boolean bissexto) {
+        this.bissexto = bissexto;
+    }
 }
