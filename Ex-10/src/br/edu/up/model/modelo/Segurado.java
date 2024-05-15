@@ -1,10 +1,10 @@
-package br.edu.up.model;
+package br.edu.up.model.modelo;
 
 public class Segurado {
   private String nome;
   private String rg;
   private String cpf;
-  private Enum<?> genero;
+  private Enum<EnumGenero> genero;
   private String telefone;
   private String endereco;
   private String cep;
@@ -14,7 +14,7 @@ public class Segurado {
 
   }
 
-  public Segurado(String nome, String rg, String cpf, Enum<?> genero, String telefone, String endereco, String cep, String cidade) {
+  public Segurado(String nome, String rg, String cpf, Enum<EnumGenero> genero, String telefone, String endereco, String cep, String cidade) {
     this.nome = nome;
     this.rg = rg;
     this.cpf = cpf;
@@ -49,11 +49,11 @@ public class Segurado {
     this.cpf = cpf;
   }
 
-  public Enum getGenero() {
+  public Enum<EnumGenero> getGenero() {
     return genero;
   }
 
-  public void setGenero(Enum genero) {
+  public void setGenero(Enum<EnumGenero> genero) {
     this.genero = genero;
   }
 

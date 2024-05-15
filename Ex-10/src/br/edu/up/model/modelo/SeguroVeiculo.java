@@ -1,6 +1,4 @@
-package br.edu.up.model;
-
-import java.time.LocalDate;
+package br.edu.up.model.modelo;
 
 public class SeguroVeiculo extends Seguro {
   private double vlrFranquia;
@@ -11,7 +9,7 @@ public class SeguroVeiculo extends Seguro {
     
   }
 
-  public SeguroVeiculo(String apolice, Segurado segurado, double vlrApolice, LocalDate dtaInicio, LocalDate dtaFim, double vlrFranquia, boolean temCarroReserva, boolean cobreVidros) {
+  public SeguroVeiculo(String apolice, Segurado segurado, double vlrApolice, String dtaInicio, String dtaFim, double vlrFranquia, boolean temCarroReserva, boolean cobreVidros) {
     super(apolice, segurado, vlrApolice, dtaInicio, dtaFim);
     this.vlrFranquia = vlrFranquia;
     this.temCarroReserva = temCarroReserva;
@@ -42,6 +40,7 @@ public class SeguroVeiculo extends Seguro {
     this.cobreVidros = cobreVidros;
   }
 
+  @Override
   public SeguroVeiculo getDados() {
     return this;
   }
